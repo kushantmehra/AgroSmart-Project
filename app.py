@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the saved RandomForestClassifier model
-model = pickle.load(open('crop_recommendation.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 # Function for making crop recommendations
 def recommendation(N, P, K, temperature, humidity, ph, rainfall):
